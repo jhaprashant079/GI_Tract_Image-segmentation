@@ -33,4 +33,4 @@ Segmentation Model used was 2D-Unet
 * The novel pipeline outperformed tha naive one giving a Private Leaderboard Score of 0.84796 and Public Score 0.85735.
 
 ##Technologies used
-Python, Pytorch,segmentation models pytorch, Deep learning, pandas,numpy
+Python, Pytorch,segmentation models pytorch, Deep learning, pandas,numpy,sklearn

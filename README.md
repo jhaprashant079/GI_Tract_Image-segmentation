@@ -31,3 +31,6 @@ Segmentation Model used was 2D-Unet
 **Metric:** Evaluation metrics used *mean Dice coefficient* and *3D Hausdorff distance*. The two metrics are combined, with a weight of 0.4 for the Dice metric and 0.6 for the Hausdorff distance.
 * With above configurations and methods the naive pipeline showed a Private Leaderboard Score of 0.82472 and Public Score of 0.83609.
 * The novel pipeline outperformed tha naive one giving a Private Leaderboard Score of 0.84796 and Public Score 0.85735.
+
+##Technologies used
+Python, Pytorch,segmentation models pytorch, Deep learning, pandas,numpy

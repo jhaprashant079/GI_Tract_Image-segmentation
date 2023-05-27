@@ -15,9 +15,9 @@ Segmentation Model used was 2D-Unet
 2D-Unet with efficientNet-b4 backbone was trained with mixed loss of "Binary Cross Entropy Loss" and "Tversky Loss".Binary cross entropy Loss is one of the common losses proved to be good in segmentation tasks.Tversky loss ensures robust performance in skewed dataset.
 
 ## Dataset preparation
-Method 1)Given Dataset has **images** in grayscale so for input in the unet model which need 3 channels, the grayscale was replicated 3 times in RGB channels.
+* Method 1)Given Dataset has **images** in grayscale so for input in the unet model which need 3 channels, the grayscale was replicated 3 times in RGB channels.
 **Masks** for trainig were given in rle encoded format so this was decoded to pass in dataloader.
-Method 2) ***Novelty:*** as the MRI scans were sequentially given over time, there was a need to make use of time data.So a simple but powerful novel approach of making trainig images by putting sequential images in RGB channels was used.With as stride of 2 current image is built by stacking previous image ,current image and next image in sequence.
+* Method 2) ***Novelty:*** as the MRI scans were sequentially given over time, there was a need to make use of time data.So a simple but powerful novel approach of making trainig images by putting sequential images in RGB channels was used.With as stride of 2 current image is built by stacking previous image ,current image and next image in sequence.
 **Mask** Mask remains as of the current image signifying current image information is not just the currnet image but some more image in sequence.And as the sequmce was slow enough,keeping current mask was ok.
 
 ## Results:

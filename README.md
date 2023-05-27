@@ -5,10 +5,11 @@ In this task we have to segment MRI image of Gastro Instestinal Tract.The classe
 There are large number of people suffering from a cancer of the gastro-intestinal tract.Radiation oncologists try to deliver high doses of radiation using X-ray beams pointed to tumors while avoiding the stomach and intestines.They manually outline  position of stomach and intestines in MRI scans of cancer region which is quite time consuming and labor intensive which also makes it difficult for patient to tolerate.
 This competition attempts to automate that process of segmentation and increase the accuracy while decreasing time consumption for higher radiation doses by oncologists.
 ## Challenges along the way:
-This was my first segmentation task so there were several challenges. Among the very first challenges was dataset preparation. As the dataset format was rle encoded it need to be carfully encoded and decoded(for submission).
-Having done classification tasks in which we apply augmentation ruthlessly ,here there was need of caution as mask was also there which required carefull transormation alongside of images.
-Besides this, thinking and implementing novel approach of scan stacking in one image was quite challenging.
-One very exhausting challenge was figuring out loss function as I spent quite some reading and trying to implement haussdorf loss.The challnge was mainly because haussdorf distance is non differentiable so there were mathematical tricks of handling it in a research paper.I tried to understand and implement it but got short on time and mathemaical base.Finally settled on mixed Tversky-BCE loss.
+This was my first segmentation task so there were several challenges.I was able to overcome some of them, while the others remained unsolved.
+* Among the very first challenges was dataset preparation. As the dataset format was rle encoded it need to be carfully encoded and decoded(for submission).
+* Having done classification tasks in which we apply augmentation ruthlessly ,here there was need of caution as mask was also there which required carefull transormation alongside of images.
+* Besides this, thinking and implementing novel approach of scan stacking in one image was quite challenging.
+* One very exhausting challenge was figuring out loss function as I spent quite some reading and trying to implement haussdorf loss.The challnge was mainly because haussdorf distance is non differentiable so there were mathematical tricks of handling it in a research paper.I tried to understand and implement it but got short on time and mathemaical base.Finally settled on mixed Tversky-BCE loss.
 
 # Final Methods and configurations
 ### Backbone Architecture

@@ -9,7 +9,7 @@ This was my first segmentation task so there were several challenges.I was able 
 * Among the very first challenges was dataset preparation. As the dataset format was rle encoded it need to be carfully encoded and decoded(for submission).
 * Having done classification tasks in which we apply augmentation ruthlessly ,here there was need of caution as mask was also there which required carefull transormation alongside of images.
 * Besides this, thinking and implementing novel approach of scan stacking in one image was quite challenging.
-* One very exhausting challenge was figuring out loss function as I spent quite some reading and trying to implement haussdorf loss.The challnge was mainly because haussdorf distance is non differentiable so there were mathematical tricks of handling it in a research paper.I tried to understand and implement it but got short on time and mathemaical base.Finally settled on mixed Tversky-BCE loss.
+* One very exhausting challenge was figuring out loss function as I spent quite some time reading and trying to implement haussdorf loss.The challnge was mainly because haussdorf distance is non differentiable so there were mathematical tricks of handling it in a research paper.I tried to understand and implement it but got short on time and mathemaical base.Finally settled on mixed Tversky-BCE loss.
 
 # Final Methods and configurations
 ### Backbone Architecture
